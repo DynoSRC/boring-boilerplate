@@ -1,0 +1,35 @@
+{
+  "name": "boring-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "boringbits": "^2.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha node_modules/mocha/bin/_mocha --require @babel/register $(find ./src -name '*-test.js')",
+    "start": "node dist/server/app",
+    "start-dev": "nodemon --watch ./src/server --exec \"NODE_ENV=development node src/server/app | npx bunyan\"",
+    "build-node": "NODE_ENV=production npx boring-build-node",
+    "build-client": "NODE_ENV=production npx boring-build-client",
+    "build": "npm run build-node && npm run build-client",
+    "build-run-all": "npm install && npm run build && npm run up && npm run start-dev",
+    "up": "npx boring-up",
+    "down": "npx boring-down",
+    "debug": "NODE_ENV=development node --inspect-brk src/server/app",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DynoSRC/boring-starter.git"
+  },
+  "author": "Ryan Stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DynoSRC/boring-starter/issues"
+  },
+  "homepage": "https://github.com/DynoSRC/boring-starter#readme"
+}
