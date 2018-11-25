@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 
-function greeting(state = { mes: 'hello world'}, action) {
+function greetings(state = { msg: 'hello world'}, action) {
 
   return state;
 }
 
 export default combineReducers({
-  greeting
+  greetings
 })
