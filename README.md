@@ -1,4 +1,4 @@
-# boring-starter
+# boring-boilerplate
 
 This project is meant to be cloned as a boilerplate project to a [`boring` webapp](https://github.com/DynoSRC/boring).
 
