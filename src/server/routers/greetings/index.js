@@ -11,7 +11,7 @@ module.exports = function setupRoute(boringApp) {
 
 
   @endpoint('/greetings')
-  class Schedule {
+  class Greeting {
 
 
     @get('/hello')             // the path for this handler will be /greetings/hello

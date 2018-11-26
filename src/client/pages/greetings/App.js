@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 
+@connect(mapStateToProps)
 class App extends React.Component {
 
   render() {
@@ -17,6 +18,5 @@ function mapStateToProps(state) {
   }
 };
 
-const ConnectedApp = connect(mapStateToProps)(App);
 
-export default ConnectedApp;
+export default App;
