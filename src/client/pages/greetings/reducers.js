@@ -5,6 +5,11 @@ function greetings(state = { msg: 'hello world'}, action) {
   return state;
 }
 
-export default combineReducers({
+// just export an object.  
+// boring will combine everything 
+// for you, as well as add a `router` 
+// reducer for you to connect react-roouter
+// and redux. 
+export default {
   greetings
-})
+}
