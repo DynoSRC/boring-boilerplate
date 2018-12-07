@@ -6,7 +6,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>{this.props.msg}</div>
+      <div>{this.props.msg}!</div>
     )
   }
 }

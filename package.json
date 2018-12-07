@@ -4,22 +4,23 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "boringbits": "^3.2.0",
+    "boringbits": "^3.3.2",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.6"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha node_modules/mocha/bin/_mocha --require @babel/register $(find ./src -name '*-test.js')",
+    "test": "node node_modules/mocha/bin/_mocha --require @boringbits/register $(find ./src -name '*-test.js')",
     "start": "node dist/server/app",
-    "start-dev": "nodemon --watch ./src/server --exec \"NODE_ENV=development node src/server/app | npx bunyan\"",
-    "build-node": "NODE_ENV=production npx boring-build-node",
-    "build-client": "NODE_ENV=production npx boring-build-client",
+    "start-dev": "nodemon --watch ./src/server --exec \"node src/server/app | npx bunyan\"",
+    "build-node": "npx boring build-node",
+    "build-client": "npx boring build-client",
+    "type-check": "npx boring tsc",
     "build": "npm run build-node && npm run build-client",
     "build-run-all": "npm install && npm run build && npm run up && npm run start-dev",
-    "up": "npx boring-up",
-    "down": "npx boring-down",
-    "debug": "NODE_ENV=development node --inspect-brk src/server/app",
+    "up": "npx boring up",
+    "down": "npx boring down",
+    "debug": "node --inspect-brk src/server/app",
     "prepublishOnly": "npm run build"
   },
   "repository": {
