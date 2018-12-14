@@ -7,7 +7,7 @@ This project is meant to be cloned as a boilerplate project to a [`boring` webap
 ```bash
 git clone git@github.com:DynoSRC/boring-starter.git
 cd boring-starter
-npm run build-run-all
+npm run install-build-start
 ```
 
-Open a browser to [https://www.boringlocal.com/greetings/hello](https://www.localtest.me/greetings/hello)
+Open a browser to [https://www.boringlocal.com/greetings/hello](https://www.boringlocal.com/greetings/hello)

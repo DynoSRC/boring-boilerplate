@@ -17,7 +17,7 @@
     "build-client": "npx boring build-client",
     "type-check": "npx boring tsc",
     "build": "npm run build-node && npm run build-client",
-    "build-run-all": "npm install && npm run build && npm run up && npm run start-dev",
+    "install-build-start": "npm install && npm run build && npm run up && npm run start-dev",
     "up": "npx boring up",
     "down": "npx boring down",
     "debug": "node --inspect-brk src/server/app",
