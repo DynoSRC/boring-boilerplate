@@ -10,4 +10,4 @@ cd boring-starter
 npm run build-run-all
 ```
 
-Open a browser to [https://www.localtest.me/greetings/hello](https://www.localtest.me/greetings/hello)
+Open a browser to [https://www.boringlocal.com/greetings/hello](https://www.localtest.me/greetings/hello)

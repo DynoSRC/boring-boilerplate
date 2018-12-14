@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "boringbits": "^3.3.2",
+    "boringbits": "^3.3.8",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.6"
   },
