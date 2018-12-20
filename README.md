@@ -1,6 +1,6 @@
 # boring-boilerplate
 
-##DEPRICATED, please use ['crate-boring-app'](https://github.com/DynoSRC/create-boring-app)
+## DEPRICATED, please use [crate-boring-app](https://github.com/DynoSRC/create-boring-app)
 
 This project is meant to be cloned as a boilerplate project to a [`boring` webapp](https://github.com/DynoSRC/boring).
 
